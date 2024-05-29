@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        font-family: times new roman;
+        margin:0;
+        padding:0;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .container-fluid{
+        width: 80%;
+        height:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        width: 80%;
+        height: 80%;
+        border-radius: 7px;
+        box-shadow: black 10px 10px 9px;
+
+    }
+</style>
+<body>
+
+<div class="container">
+    <div class="container-fluid">
+        <div class="content bg-light">
+            <h2 class="bg-info">RESULT</h2>
+            <h4 class="bg-light">Your BMI: <b>{{result}} kg/m2</b></h4>
+            <table class="table table-light table-hover border-dark">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Classification</th>
+                <th scope="col">BMI Ranges (kg/m2)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-primary">
+                <th scope="row">1</th>
+                <td>Severe Thinness</td>
+                <td>< 16</td>
+            </tr>
+            <tr class="table-info">
+                <th scope="row">2</th>
+                <td>Moderate Thinness</td>
+                <td>16 - 17</td>
+
+            </tr>
+            <tr class="table-warning">
+                <th scope="row">3</th>
+                <td>Mild Thinness</td>
+                <td>17 - 18.5</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row">4</th>
+                <td>Normal</td>
+                <td>18.5 - 25</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">5</th>
+                <td>Over Weight</td>
+                <td>25 - 29.9</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row">6</th>
+                <td>Obese Class I</td>
+                <td>30 - 34.9 </td>
+            </tr>
+            <tr class="table-info">
+                <th scope="row">7</th>
+                <td>Obese Class II</td>
+                <td>35 - 39.9</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">8</th>
+                <td>Obese Class III</td>
+                <td>> = 40</td>
+            </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
